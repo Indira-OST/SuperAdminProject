@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="utility.TestListener" />
+	</listeners>
+	
+	<!--<test thread-count="5" name="CustomerTest">
+		<classes>
+			<class name="org.SuperAdminCustomerTest.CustomerTest" />
+		</classes>
+	</test>-->
+	
+	
+	<test thread-count="5" name="CatalogTest">
+		<classes>
+			<!--<class name="org.SuperAdminCatalogTest.AdminPortalTest" />-->
+			<class name="org.SuperAdminCatalogTest.ProductPageTest" />
+			<!--<class name="org.SuperAdminCatalogTest.ProductReviewPageTest" />
+			<class name="org.SuperAdminCatalogTest.CategoriesPageTest" />
+			<class name="org.SuperAdminCatalogTest.AttributesTest" />
+			<class name="org.SuperAdminCatalogTest.ManufacturersPageTest" />
+			
+			<class name="org.SuperAdminCatalogTest.ProductTagsTest" />-->
+		</classes>
+	</test>
+</suite> <!-- Suite -->
